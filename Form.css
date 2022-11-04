@@ -1,0 +1,169 @@
+.img_title
+{
+    width: 50%;
+
+}
+
+.img_title_direction
+{
+    display: block;
+    text-align: center;
+}
+
+.city_block
+{
+    display: block;
+    text-align: center;
+    border-style: solid;
+    border-color: transparent;
+    background-color: gainsboro;
+    margin-left: -3%;
+    margin-right: -3%;
+    box-shadow: 0px 0px 0px 0px;
+    padding: 0px;
+    margin-top: 10px;
+
+
+}
+
+.title
+{
+    margin-top: 10%;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+}
+h4
+{
+    
+    color: gainsboro;
+}
+h5
+{
+    color: white;
+}
+
+
+.explore
+{
+    display: ruby-base;
+    padding: 3%;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    border-color: transparent;
+    border-radius: 20px;
+    width: 50%;
+    box-shadow: 0px 5px 10px 0px #09080836;
+    
+   
+}
+
+.reserve_find_direction
+{
+
+    text-align: center;
+    background-color: #F2F2F2;
+    padding-bottom: 20px;
+}
+.image_restaurant
+{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+
+  }
+    
+
+
+.section_restauration
+{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+}
+
+.block_restaurant
+{
+
+    background-color: rgb(255, 255, 255);
+    margin-top: 5%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 5px 10px 0px #09080836;
+}
+
+strong
+{
+    margin-left: 10px;
+}
+
+.text_section_restaurant
+{
+    margin-left: 10px;
+}
+
+
+.search_restaurant
+{
+
+    border-radius: 20px;
+    margin-bottom: 5%;
+    background-color: #F2F2F2;
+    box-shadow: 0px 5px 10px 0px #09080836;
+}
+
+.compose_menu
+{
+    
+    border-radius: 20px;
+    margin-bottom: 5%; 
+    background-color: #F2F2F2;
+    box-shadow: 0px 5px 10px 0px #09080836;
+}
+
+.taste_restaurant
+{
+    
+    border-radius: 20px;
+    margin-bottom: 5%; 
+    box-shadow: 0px 5px 10px 0px #09080836;
+}
+
+.block_selection
+ {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+ }
+
+
+ footer
+ {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+ }
+
+ ul
+ {
+    list-style-type: none;
+ }
+
+ .link_footer
+ {
+    text-decoration: none;
+    color: white;
+   
+ }
+
+ .text_footer
+ {
+    margin-left: 5%;
+    color: white;
+ }
