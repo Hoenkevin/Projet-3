@@ -15,7 +15,7 @@ body
 
 img
 {
-    width: 115%;
+    width: 100%;
     margin-top: 10px;
 }
 
@@ -23,20 +23,27 @@ section
 {
     position: relative;
     top: -150px;
+    background-color: #f7f7f7;
+    border-top-right-radius: 75px;
+    border-top-left-radius: 75px;   
 }
+
+
+.menu_title
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
 p
 {
     line-height: 0.5em;
     margin-left: 10px;
 }
 
-.price
-{
-    display: block;
-    text-align: end;
-    margin-right: 10%;
-    margin-top: -25px;
-}
+
 
 .bloc_entrées1
 {
@@ -69,11 +76,6 @@ p
 }
 
 
-section
-{
-    border-top-left-radius: 10%;
-    background-color: #f7f7f7;
-}
 
 .block1
 {
@@ -149,4 +151,29 @@ footer li
 {
    font-weight: bolder;
    line-height: 1.5em;
+}
+
+
+
+
+
+.bloc_menu
+{
+    padding: 5px;
+}
+
+.card_menu
+{
+    background-color: #80ff008a;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_menu_price
+{
+    display: flex;
+    align-items: end;
 }
