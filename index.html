@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c25778009b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Form.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/Form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -29,31 +33,41 @@
 
             <h4>Découvrez des restaurants d'exception <br>
                  sélectionnées par nos soins</h4>
+
              <div  class="degrade-diagonal">
                 <div class="explore">
-                    <h5><a href=""> Explorer nos restaurants</a></h5>
+                    <a href=""><h5>Explorer nos restaurants</h5>
+                    </a>
                 </div>
             </div>
         </div>
 
     </header> 
 
-    <section>
+    <section class="fonction">
         <h2 class="title">Fonctionnement</h2>
             <div class="block_selection">
 
                 <div class="search_restaurant">
-                     <i class="fa-solid fa-mobile-screen-button"></i><p>Choisisez un restaurants</p>
+                    <span class="search_restaurant_number">1</span>
+                     <i class="fa-solid fa-mobile-screen-button"></i>
+                     <p>Choisisez un restaurants</p>
 
                 </div>
 
-                <div class="compose_menu">
+                <div class="search_restaurant">
+                    <span class="search_restaurant_number">2</span>
                     <i class="fa-solid fa-bars"></i><p>Composez votre menu</P>
                 </div>
 
-                <div class="taste_restaurant">
-                    <i class="fa-solid fa-store"></i><p>Dégustez au restaurants</p>
-                </div>
+                    
+                    <div class="search_restaurant_pink">
+                        
+                        <span class="search_restaurant_number">3</span>
+                        <i class="fa-solid fa-store color"></i><p>Dégustez au restaurants</p>
+                 
+                    </div>
+                 
             
             </div>
     
@@ -63,41 +77,90 @@
     </section>
 
     <section class="section_restauration">
+
       <h2>Restaurants</h2>      
         <div class="block_restaurant">
             <a class="" href="">
+                <P class="new">Nouveau</P>
                 <img class="image_restaurant" src="Image/restaurants/jay-wennington-N_Y88TWmGwA-unsplash-plat1.jpg" alt="">
-            </a> <br>
-                <strong>La palette du goût</strong>
-                <p class="text_section_restaurant">Ménilmontant</p>
-            
+                
+                <div class="block_description">
+                    <div class="description_text">
+                        <strong>La palette du goût</strong>
+                        <p class="text_section_restaurant">Ménilmontant</p>
+                    </div>
+
+                    <div class="icone_heart">
+
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-sharp fa-solid fa-heart"></i>
+
+                    </div>
+                   
+                </div>
+            </a> 
         </div>
 
         <div class="block_restaurant">
             <a class="" href="">
+                <P class="new">Nouveau</P>
                 <img class="image_restaurant" src="Image/restaurants/stil-u2Lp8tXIcjw-unsplash-plat2.jpg" alt="">
-            </a> <br>
-                <strong>La note enchantée</strong>
-                <p class="text_section_restaurant">Charonne</p>
             
+                <div class="block_description">
+                    <div class="description_text">
+                        <strong>La note enchantée</strong>
+                        <p class="text_section_restaurant">Charonne</p>
+                    </div>
+
+                    <div class="icone_heart">
+
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-sharp fa-solid fa-heart"></i>
+
+                    </div>
+                   
+                </div>
+            </a>
         </div>
 
         <div class="block_restaurant">
             <a class="" href="">
                 <img class="image_restaurant" src="Image/restaurants/toa-heftiba-DQKerTsQwi0-unsplas-plat3.jpg" alt="">
-            </a> <br>
-                <strong>A la française</strong>
-                <p class="text_section_restaurant">Cité Rouge</p>
             
+                <div class="block_description">
+                    <div class="description_text">
+                        <strong>A la française</strong>
+                        <p class="text_section_restaurant">Cité Rouge</p>
+                    </div>
+
+                    <div class="icone_heart">
+
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-sharp fa-solid fa-heart"></i>
+
+                    </div>
+                   
+                </div>
         </div>
 
         <div class="block_restaurant">
             <a class="" href="">
                 <img class="image_restaurant" src="Image/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash-plat4.jpg" alt=""> 
-            </a><br>
-                <strong>Le délice des sens</strong>
-                <p class="text_section_restaurant">Folie-Méricourt</p>
             
+                <div class="block_description">
+                    <div class="description_text">
+                        <strong>Le délice des sens</strong>
+                        <p class="text_section_restaurant">Folie-Méricourt</p>
+                    </div>
+
+                    <div class="icone_heart">
+
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-sharp fa-solid fa-heart"></i>
+
+                    </div>
+                   
+                </div>
         </div>
 
     </section>
@@ -107,7 +170,7 @@
         <p class="text_footer">ohmyfood</p>
 
         <ul>
-            <li><i class="fa-sharp fa-solid fa-utensils"></i><a  class="link_footer" href=""> Proposer un restaurants</a></li>
+            <li><i class="fa-sharp fa-solid fa-utensils"></i><a  class="link_footer" href=""> Proposer un restaurants </a></li>
             <li><i class="fa-regular fa-handshake-angle"></i><a  class="link_footer" href=""> Devenir partenaire</a></li>
             <li><a  class="link_footer" href=""> Mention légales </a></li>
             <li><a  class="link_footer" href="">contact</a></li>

@@ -1,3 +1,17 @@
+*
+{
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+
+h3
+{
+    margin-top: 40px;
+    padding-top: 30px;
+}
+
 .img_title
 {
     width: 50%;
@@ -26,6 +40,11 @@
 
 }
 
+.city_block p
+{
+    font-weight: bold;
+}
+
 .title
 {
     margin-top: 10%;
@@ -33,19 +52,22 @@
 a
 {
     text-decoration: none;
-    color: white;
+    color: black
 }
 h4
 {
     
-    color: gainsboro;
+    color: #b4b4b4;
 }
 h5
 {
     color: white;
 }
 
-
+.fonction
+{
+    padding: 10px;
+}
 .explore
 {
     display: ruby-base;
@@ -65,24 +87,45 @@ h5
     text-align: center;
     background-color: #F2F2F2;
     padding-bottom: 20px;
+    margin-top: -40px;
 }
 .image_restaurant
 {
     width: 100%;
+    height: 170px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     object-fit: cover;
 
   }
+
+.description_text
+{
+    line-height: 0.5em;
+    margin-top: 15px;
+}
     
 
 
 .section_restauration
 {
-    background-color: #F2F2F2;
+    padding: 10px;
+    background-color: #f7f7f7;
     display: flex;
     flex-direction: column;
+    margin-bottom: -10px;
+    padding-bottom: 50px;
 }
+
+
+.block_description
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
 
 .block_restaurant
 {
@@ -94,6 +137,7 @@ h5
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     box-shadow: 0px 5px 10px 0px #09080836;
+    position: relative;
 }
 
 strong
@@ -107,6 +151,18 @@ strong
 }
 
 
+.search_restaurant_number
+{
+    background-color: #9356DC;
+    color: white;
+    border-radius: 100%;
+    padding: 1px 5px;
+    font-weight: bolder;
+    height: 18px;
+    position: absolute;
+    left: -10px;
+}
+
 .search_restaurant
 {
 
@@ -114,6 +170,47 @@ strong
     margin-bottom: 5%;
     background-color: #F2F2F2;
     box-shadow: 0px 5px 10px 0px #09080836;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+.search_restaurant  p
+{
+    font-weight: bolder;
+}
+.search_restaurant_pink p
+{
+    font-weight: bolder;  
+}
+
+.search_restaurant_pink
+
+{
+    border-radius: 20px;
+    margin-bottom: 5%;
+    background-color:#f5edff;
+    box-shadow: 0px 5px 10px 0px #09080836;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+.search_restaurant_pink .fa-solid
+{
+    margin: 0px 25px;
+}
+.search_restaurant_pink .fa-solid
+{
+    color: #9356dc;
+}
+
+
+.search_restaurant i
+{
+    margin: 0px 25px;
 }
 
 .compose_menu
@@ -135,16 +232,17 @@ strong
 
 .block_selection
  {
-    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
- }
+    padding: 10px;
+  }
+ 
 
 
  footer
  {
-    background-color: grey;
+    background-color: #353535;
     display: flex;
     flex-direction: column;
     margin-top: 10px;
@@ -164,6 +262,81 @@ strong
 
  .text_footer
  {
+    font-family: 'Shrikhand', cursive;
     margin-left: 5%;
     color: white;
+    font-weight: bold;
  }
+footer li
+{
+    font-weight: bolder;
+    line-height: 1.5em;
+}
+
+
+
+  /*Position Absolute */
+
+  .new
+  {
+    border: none;
+    background-color:#99E2D0    ;
+    padding: 7px 10px 7px 10px;
+    right: 5%;
+    position: absolute;
+    color:#098c6c;
+    font-weight: bold;
+    border-radius: 2px;
+  }
+
+  .icone_heart
+  {
+    
+   
+    font-size: 36px;
+    position: relative;
+    padding-right: 20px;
+    
+    
+  }
+
+.fa-regular
+{
+    font-size: 23px;
+}
+
+  
+ 
+
+
+  .fa-sharp:hover
+  {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#9356dc+0,ff79da+100,ff79da+100 */
+background: #9356dc; /* Old browsers */
+background: -moz-linear-gradient(45deg, #9356dc 0%, #ff79da 100%, #ff79da 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #9356dc 0%,#ff79da 100%,#ff79da 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #9356dc 0%,#ff79da 100%,#ff79da 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9356dc', endColorstr='#ff79da',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    ;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+  .fa-sharp
+  {
+    position: absolute;
+    bottom: 20px;
+    left: 267px;
+    font-size: 25px;
+    color: transparent;
+    left: -1px;
+    top: 12px;
+  }
+
+  .icone_heart:hover
+  {
+    background: white;
+    border-bottom-right-radius: 15px;
+  }
+
+  
