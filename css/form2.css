@@ -1,6 +1,8 @@
 body
 {
     position: relative;
+    font-family: "Roboto",sans-serif;
+    color: black;
 }
 .img_title
 {
@@ -24,8 +26,9 @@ section
     position: relative;
     top: -150px;
     background-color: #f7f7f7;
-    border-top-right-radius: 75px;
-    border-top-left-radius: 75px;   
+    border-top-right-radius: 45px;
+    border-top-left-radius: 45px;
+    margin-top: 95px;
 }
 
 
@@ -156,24 +159,118 @@ footer li
 
 
 
+.fa-arrow-left
+{
+position: absolute;
+margin-top: 18px;
+margin-right: -37px;
+margin-left: -65px;
+font-size: 1.5em;
+}
+
+
+h2
+{
+    font-family: 'Shrikhand', cursive;
+    
+}
 
 .bloc_menu
 {
-    padding: 5px;
+    padding: 15px;
 }
 
 .card_menu
 {
-    background-color: #80ff008a;
-    padding: 5px;
-    border-radius: 10px;
+    position: relative;
+    background-color: white;
+    padding: 0px;
+    border-radius: 20px;
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0px 5px 10px 0px #09080836;
 }
 
 .card_menu_price
 {
     display: flex;
     align-items: end;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.card_menu_price:hover
+{
+    display: none;
+}
+
+.font_weight_bold
+{
+    font-weight: bold;
+}
+
+.check_box
+{
+    position: relative;
+    padding: 20px;
+    background-color: #99e2d0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: none;
+}
+
+.check_box i
+{
+    color: white;
+    font-size: 20px;
+    margin:auto;
+}
+
+.card_menu:hover .check_box
+{
+    display: block;
+}
+
+.icone_heart_empty
+{
+position: absolute;
+color: black;
+display: felx;
+display: flex;
+align-items: end;
+justify-content: end;
+margin-right: 0px;
+margin-left: 85%;
+margin-bottom: -19px;
+margin-top: -61px;
+font-size: 1.7em;
+}
+.icone_heart_full
+{
+position: absolute;
+color: #f2f2f2;
+display: felx;
+display: flex;
+align-items: end;
+justify-content: end;
+margin-right: 0px;
+margin-left: 85%;
+margin-bottom: -19px;
+margin-top: -61px;
+font-size: 1.7em;
+
+}
+
+.fa-sharp:hover
+{
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#9356dc+0,ff79da+100,ff79da+100 */
+background: #9356dc; /* Old browsers */
+background: -moz-linear-gradient(45deg, #9356dc 0%, #ff79da 100%, #ff79da 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #9356dc 0%,#ff79da 100%,#ff79da 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #9356dc 0%,#ff79da 100%,#ff79da 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9356dc', endColorstr='#ff79da',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  ;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
