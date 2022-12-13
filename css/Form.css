@@ -36,6 +36,7 @@ h3
     box-shadow: 0px 0px 0px 0px;
     padding: 0px;
     margin-top: 10px;
+    box-shadow: inset 0px 5px 10px -10px gray;
 
 
 }
@@ -71,11 +72,10 @@ h5
 .explore
 {
     display: ruby-base;
-    padding: 3%;
+    padding: 15px;
     background: linear-gradient(to bottom right, #FF79DA, #9356DC);
     border-color: transparent;
-    border-radius: 20px;
-    width: 50%;
+    border-radius: 25px;
     box-shadow: 0px 5px 10px 0px #09080836;
     
    
@@ -88,6 +88,11 @@ h5
     background-color: #F2F2F2;
     padding-bottom: 20px;
     margin-top: -40px;
+}
+
+.reserve_find_direction p
+{
+    padding: 0px 20px;
 }
 .image_restaurant
 {
@@ -180,29 +185,14 @@ strong
 {
     font-weight: bolder;
 }
-.search_restaurant_pink p
-{
-    font-weight: bolder;  
-}
 
-.search_restaurant_pink
-
+.search_restaurant:hover
 {
-    border-radius: 20px;
-    margin-bottom: 5%;
+    
     background-color:#f5edff;
-    box-shadow: 0px 5px 10px 0px #09080836;
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding: 10px;
 }
 
-.search_restaurant_pink .fa-solid
-{
-    margin: 0px 25px;
-}
-.search_restaurant_pink .fa-solid
+.search_restaurant:hover i
 {
     color: #9356dc;
 }
@@ -265,7 +255,8 @@ strong
     font-family: 'Shrikhand', cursive;
     margin-left: 5%;
     color: white;
-    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
  }
 footer li
 {
@@ -309,7 +300,7 @@ footer li
  
 
 
-  .fa-sharp:hover
+  .icone_heart i.fa-sharp:hover
   {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#9356dc+0,ff79da+100,ff79da+100 */
 background: #9356dc; /* Old browsers */
@@ -322,7 +313,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9356dc', end
     -webkit-background-clip: text;
   }
 
-  .fa-sharp
+  .icone_heart i.fa-sharp
   {
     position: absolute;
     bottom: 20px;
@@ -339,4 +330,46 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9356dc', end
     border-bottom-right-radius: 15px;
   }
 
+
+  @media (min-width : 1024px)
+
+{
+ .block_selection
+ {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+ }
+
+ .search_restaurant
+ {
+    width: 28%;
+ }
+
+ .restaurants
+ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+ }
+ .block_restaurant
+ {
+    width: 40%;
+ }
+
+ footer ul
+
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+
+ footer p
+ {
+    text-align: center;
+ }
+}
   
