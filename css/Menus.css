@@ -181,6 +181,13 @@ h2
     
 }
 
+.bloc_menu h4
+
+{
+    font-weight: normal;
+}
+
+
 .bloc_menu
 {
     padding: 15px;
@@ -196,6 +203,23 @@ h2
     display: flex;
     justify-content: space-between;
     box-shadow: 0px 5px 10px 0px #09080836;
+    -webkit-animation: slide 800ms both;
+            animation: slide 800ms both;
+    -webkit-animation: display_menu 800ms both;
+            animation: display_menu 800ms both;
+    
+}
+
+.card_menu_description 
+{
+    white-space: nowrap;
+    overflow: hidden;
+       
+}
+
+.card_menu_description p
+{
+    text-overflow: ellipsis;
 }
 
 .card_menu_price
@@ -248,6 +272,71 @@ h2
     }
   }
 
+  @keyframes rotate-up {
+    from {
+        transform: rotate(0deg);
+    }
+    to { 
+        transform: rotate(360deg);
+    }
+    
+  }
+
+  @-webkit-keyframes rotate-up {
+    from {
+        transform: rotate(0deg);
+    }
+    to { 
+        transform: rotate(360deg);
+    }
+    
+  }
+
+
+  @-webkit-keyframes slide
+   {
+    0% {
+      transform: translate(60px);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(60px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translate(60px);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(60px);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes display_menu{
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes display_menu {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
 
 .check_box
 {
@@ -262,9 +351,8 @@ h2
 /*test animation bouton check*/
 .card_menu:hover .check_box 
 {
-    -webkit-animation: scale-up-hor-right 500ms cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: scale-up-hor-right 500ms cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    
+    -webkit-animation: scale-up-hor-right 600ms cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-hor-right 600ms cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .check_box i
@@ -274,20 +362,18 @@ h2
     margin:auto;
 
     /*test animation bouton check i*/
-    transition: width 2s, height 2s, background-color 2s, transform 1s;
+    
 }
 
 
 /*test animation bouton check i*/
-.bloc_menu:hover .fa-solid
+.card_menu:hover i
 {
-    transform: rotate(360deg);
+    
+    -webkit-animation: rotate-up 700ms cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: rotate-up 700ms cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-.card_menu_description:hover .check_box .fa-solid
-{
-    transform: rotate(360deg);
-}
 
 
 .card_menu:hover .check_box
@@ -346,12 +432,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9356dc', end
 .underline
 {
     position: absolute;
-    margin-top: -25px;
+    margin-top: -29px;
+    color: #95e1cf;
+    margin-left: 1px;
+    font-weight: bold;
+  }
     
     
-}
 
 .catégorie::before
 {
     border-bottom: 2px solid #94e1ce;
+}
+
+
+footer i
+{
+  color: white;
 }
