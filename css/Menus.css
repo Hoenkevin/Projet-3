@@ -9,6 +9,7 @@ body
     width: 50%;
 
 }
+
 .img_title_direction
 {
     display: block;
@@ -166,11 +167,12 @@ footer li
 
 .fa-arrow-left
 {
-position: absolute;
-margin-top: 18px;
-margin-right: -37px;
-margin-left: -65px;
-font-size: 1.5em;
+  position: absolute;
+  left: 10%;
+  font-size: 1.5em;
+  color: black;
+  margin-top: 15px;
+
 }
 
 
@@ -459,16 +461,34 @@ footer i
 @media only screen and (min-width : 1024px)
 
 {
+  .fa-arrow-left
+{
+  position: absolute;
+  left: 10%;
+  font-size: 50px;
+  color: black;
+  margin-top: 10px;
+
+}
+
+.img_title {
+  width: auto;
+  height: 60px;
+}
 
   section
   {
     width: 100%;
-    
+    position: relative;
+    top: -300px;
   }
+  
+
 
   .header_picture
   {
     height: 500px;
+    object-fit: cover;
   }
   section .bloc_menu
  {
@@ -489,4 +509,5 @@ footer i
   {
     margin-top: -150px;
   }
+  
 }
