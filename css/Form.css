@@ -2,8 +2,66 @@
 {
     font-family: 'Roboto', sans-serif;
 
+}
+
+.loader
+{
+    align-items: center;
+    background: #FFF;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: opacity 0.2s linear;
+    width: 100%;
+    opacity: 0;
+    z-index: 0;
+    animation: loader 3s linear;
 
 }
+@keyframes loader
+{
+    0%{
+        opacity:1;
+        z-index: 9999;
+    }
+    50%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity:0;
+        z-index: 0;
+    }
+}
+
+/*animation loader  */
+.spinner {
+    width: 150px;
+    aspect-ratio: 1;
+    display: grid;
+    animation: s4 4s infinite;
+  }
+  .spinner::before,
+  .spinner::after {    
+    content: "";
+    grid-area: 1/1;
+    border: 15px solid;
+    border-radius: 50%;
+    border-color: red red #0000 #0000;
+    mix-blend-mode: darken;
+    animation: s4 1s infinite linear;
+  }
+  .spinner::after {
+    border-color: #0000 #0000 blue blue;
+    animation-direction: reverse;
+  }
+  
+  @keyframes s4{ 
+    100%{transform: rotate(1turn)}
+  }
+
 
 
 h3
@@ -60,7 +118,8 @@ h4
     
     color: #b4b4b4;
 }
-h5
+
+.explore a
 {
     color: white;
 }
@@ -69,7 +128,7 @@ h5
 {
     padding: 10px;
 }
-.explore
+.explore a
 {
     display: ruby-base;
     padding: 15px;
@@ -238,15 +297,17 @@ strong
     margin-top: 10px;
  }
 
- ul
+ footer ul
  {
     list-style-type: none;
+    padding-left: 20px
  }
 
- .link_footer
+ .link_footer, .link_footer i 
  {
     text-decoration: none;
     color: white;
+
    
  }
 
@@ -263,7 +324,7 @@ footer li
     font-weight: bolder;
     line-height: 1.5em;
 }
-
+ 
 
 
   /*Position Absolute */
@@ -331,9 +392,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9356dc', end
   }
 
 
+
+
   @media (min-width : 1024px)
 
 {
+
+.img_title
+{
+    width: auto;
+    height: 100px;
+}
+.img_title_direction
+{
+    padding-top: 20px;
+}
+
  .block_selection
  {
     flex-direction: row;
@@ -341,18 +415,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9356dc', end
     justify-content: space-around;
  }
 
+ .fonction h2
+ {
+    margin-top: 20px;
+ }
+
  .search_restaurant
  {
     width: 28%;
  }
+
+.explore a 
+{ 
+    font-weight: bold;
+}
 
  .restaurants
  {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
  }
+
+ .image_restaurant
+ {
+    height: 250px;
+ }
+
  .block_restaurant
  {
     width: 40%;
@@ -371,5 +460,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9356dc', end
  {
     text-align: center;
  }
+
+ body{
+    font-size: 26px;
+ }
+
+ .search_restaurant_number{
+    height: auto;
+    padding: 5px 10px;
+ }
+ .icone_heart i, .icone_heart i.fa-sharp
+ {
+    font-size: 35px;
+ }
+ .icone_heart i.fa-sharp{
+    bottom: 0px;
+    left: 0px;
+    top: 2px;
+ }
+
+.text_footer
+{
+    font-size: 35px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+}
+ 
 }
   
+
+
+
+
